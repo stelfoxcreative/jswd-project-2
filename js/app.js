@@ -24,7 +24,7 @@ function showPage(pageClicked, active) {
   //Then loop through all students in our student list argument
   for (let i = 0; i<students.length; i++) {
     // if student should be on this page number
-    if (i > min && i < max) {
+    if (i >= min && i <= max) {
       // show the student
       $(students[i]).show();
     }
